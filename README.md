@@ -22,7 +22,7 @@
 
   <a href="">
     <img
-      alt="Learn NextJS"
+      alt="React Hooks"
       src="screenshot.jpg"
     />
   </a>
