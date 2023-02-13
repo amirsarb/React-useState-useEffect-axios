@@ -1,3 +1,66 @@
+<div>
+  <h1 align="center">A Practice for React Hooks: useState, useEffects, axios 🧑‍💻</h1>
+  <h2 align="center">Get data from an API and change the state.</h2>
+
+<h3>Goals</h3>
+  <ul>
+  <li>
+  useState()
+  </li>
+  <li>
+  useEffects()
+  </li>
+  <li>
+   axios
+    </li>
+
+   </ul>
+
+  <p>
+    Screenshot:
+  </p>
+
+  <a href="">
+    <img
+      alt="Learn NextJS"
+      src="screenshot.jpg"
+    />
+  </a>
+</div>
+
+<hr />
+
+## Requirements
+- NPM
+- React
+- React-dom
+- axios
+
+
+## Main Component
+- StarWarsMovie contains:
+
+- useEffect() - get data from axios and set data
+
+```javascript
+
+ useEffect(()=>{
+async function fetchData(){
+    const res = await axios.get(`https://swapi.dev/api/films/${item}`)
+    setMovie(res.data)
+}
+fetchData() 
+
+},[item])
+
+```
+- setState - represent which Items is selected and movie data
+```javascript
+const [item,setItem] = useState(1)
+const [movie,setMovie] = useState("")
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
